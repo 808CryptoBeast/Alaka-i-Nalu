@@ -291,7 +291,7 @@ body.dark .switch::before {
     position: fixed;
     top: 0;
     left: 0;
-    width: 200vw; /* Set to viewport width */
+    width: 100vw; /* Set to viewport width */
     height: 100vh;
     overflow: hidden;
     margin: 0;
