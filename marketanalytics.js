@@ -20,12 +20,12 @@ sidebarToggle.addEventListener("click", () => {
 
     if (isSidebarOpen) {
         // Adjust video and background styles when the sidebar is closed
-        videoContainer.style.width = "100%";
-        backgroundVideo.style.width = "100%";
+        videoContainer.style.width = "100vw";
+        backgroundVideo.style.width = "100vw";
     } else {
         // Adjust video and background styles when the sidebar is open
-        videoContainer.style.width = "calc(100% + 250px)";
-        backgroundVideo.style.width = "calc(100% + 250px)";
+        videoContainer.style.width = "200vw";
+        backgroundVideo.style.width = "200vw";
     }
 });
 
