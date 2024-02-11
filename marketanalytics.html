@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to Boxicons CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="marketanalytics.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+
+    <title>Market Analytics</title>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <nav class="sidebar close">
+        <header>
+            <!-- Logo and Text -->
+            <div class="image-text">
+                <span class="image">
+                    <img src="B&C pics/MarketButtonIcon.png" alt="logo">
+                </span>
+                <div class="text header-text">
+                    <span class="name">Crypto Beast Labs</span>
+                    <span class="profession">Web Developer</span>
+                </div>
+            </div>
+            <!-- Sidebar Toggle Icon -->
+            <i class='bx bx-chevron-right toggle' id="sidebarToggle"></i>
+        </header>
+
+        <!-- Menu -->
+        <div class="menu-bar">
+            <div class="menu">
+                <!-- Search Box -->
+                <li class="search-box">
+                    <i class='bx bx-search-alt icon' id="searchBtn"></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <!-- Navigation Links -->
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="dashboard.html">
+                            <i class='bx bx-home icon'></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bxs-folder-open icon'></i>
+                            <span class="text nav-text">Portfolio</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bar-chart-alt icon'></i>
+                            <span class="text nav-text">Market Analytics</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bxs-news icon'></i>
+                            <span class="text nav-text">News & Information</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bxl-bitcoin icon'></i>
+                            <span class="text nav-text">Blockchain & Cryptography</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-envelope icon'></i>
+                            <span class="text nav-text">About & Contacts</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Bottom Content -->
+            <div class="bottom-content">
+                <!-- Logout Link -->
+                <li class="nav-link">
+                    <a href="#">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <!-- Dark Mode Toggle -->
+                <li class="mode">
+                    <div class="moon-sun">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch" id="modeSwitch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section class="home">
+        <!-- Video Container -->
+        <div class="video-container">
+            <video id="backgroundVideo" autoplay loop muted>
+                <source src="B&C pics/World Red ANd Green.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Your Custom Widget -->
+        <div class="widget">
+            <div class="tradingview-widget-container" style="height:100%;width:100%">
+                <div id="tradingview_c75b7" style="height:calc(100% - 32px);width:100%"></div>
+                <div class="tradingview-widget-copyright">
+                    <a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank">
+                        <span class="blue-text">Track all markets on TradingView</span>
+                    </a>
+                </div>
+                <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                <script type="text/javascript">
+                    new TradingView.widget({
+                        "autosize": true,
+                        "symbol": "BINANCE:XRPUSDT",
+                        "timezone": "Etc/UTC",
+                        "theme": "dark",
+                        "style": "1",
+                        "locale": "en",
+                        "enable_publishing": false,
+                        "backgroundColor": "rgba(0, 0, 0, 1)",
+                        "gridColor": "rgba(152, 152, 152, 0.06)",
+                        "withdateranges": true,
+                        "range": "YTD",
+                        "hide_side_toolbar": false,
+                        "allow_symbol_change": true,
+                        "watchlist": [
+                            "BITSTAMP:BTCUSD",
+                            "COINBASE:BTCUSD",
+                            "BINANCE:BTCUSD",
+                            "BITSTAMP:XRPUSD",
+                            "COINBASE:XRPUSD",
+                            "KUCOIN:XRPUSDT",
+                            "MEXC:FLRUSDT",
+                            "COINBASE:FLRUSD",
+                            "BITFINEX:FLRUSD",
+                            "KRAKEN:SGBUSD",
+                            "BITFINEX:SGBUSD",
+                            "MEXC:SGBUSDT",
+                            "MEXC:CSPRUSDT",
+                            "OKX:CSPRUSDC",
+                            "GATEIO:CSPRUSDT",
+                            "COINBASE:HBARUSD",
+                            "BINANCE:GALAUSDT"
+                        ],
+                        "details": true,
+                        "hotlist": true,
+                        "calendar": true,
+                        "show_popup_button": true,
+                        "popup_width": "1000",
+                        "popup_height": "550",
+                        "container_id": "tradingview_c75b7"
+                    });
+                </script>
+            </div>
+        </div>
+    </section>
+    <!-- Script -->
+    <script src="marketanalytics.js"></script>
+
+</body>
+
+</html>
