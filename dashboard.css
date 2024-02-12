@@ -9,7 +9,7 @@ body {
   background-color: #272727; /* Add a background color */
 }
 
-#icon {
+.icon {
   width: 80px;
   height: 80px;
   filter: none;
