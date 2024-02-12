@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("smokey_flag.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(50, 50, 50, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 90px rgba(255, 0, 0, 0.8), 0 0 90px rgba(255, 223, 0, 0.6), 0 0 1100px rgba(255, 223, 0, 0.4);
+    transition: box-shadow 0.3s, background-color 0.3s; /* Add transition for box shadow and background color */
+}
+
+.container:hover {
+    background-color: rgba(50, 50, 0.7);
+}
+
+h1 {
+    color: #fff;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.btn.clicked {
+    animation: glow 0.5s ease-in-out;
+}
+
+#translation:hover,
+#pronunciation:hover,
+#usage:hover {
+    color: #9eff9e;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 20px rgba(255, 223, 0, 0.8), 0 0 40px rgba(255, 223, 0, 0.6), 0 0 60px rgba(255, 223, 0, 0.4);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.8), 0 0 40px rgba(255, 0, 0, 0.6), 0 0 60px rgba(255, 0, 0, 0.4);
+    }
+}
