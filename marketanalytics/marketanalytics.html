@@ -6,12 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Link to Boxicons CSS -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
-
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="marketanalytics.css">
-    <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
 
     <title>Market Analytics</title>
@@ -19,10 +15,8 @@
 
 <body>
 
-    <!-- Sidebar -->
     <nav class="sidebar close">
         <header>
-            <!-- Logo and Text -->
             <div class="image-text">
                 <span class="image">
                     <img src="MarketButtonIcon.png" alt="logo">
@@ -32,20 +26,14 @@
                     <span class="profession">Web Developer</span>
                 </div>
             </div>
-            <!-- Sidebar Toggle Icon -->
             <i class='bx bx-chevron-right toggle' id="sidebarToggle"></i>
         </header>
-
-        <!-- Menu -->
         <div class="menu-bar">
             <div class="menu">
-                <!-- Search Box -->
                 <li class="search-box">
                     <i class='bx bx-search-alt icon' id="searchBtn"></i>
                     <input type="text" placeholder="Search...">
                 </li>
-
-                <!-- Navigation Links -->
                 <ul class="menu-links">
                     <li class="nav-link">
                         <a href="index.html">
@@ -85,18 +73,13 @@
                     </li>
                 </ul>
             </div>
-
-            <!-- Bottom Content -->
             <div class="bottom-content">
-                <!-- Logout Link -->
                 <li class="nav-link">
                     <a href="#">
                         <i class='bx bx-log-out icon'></i>
                         <span class="text nav-text">Logout</span>
                     </a>
                 </li>
-
-                <!-- Dark Mode Toggle -->
                 <li class="mode">
                     <div class="moon-sun">
                         <i class='bx bx-moon icon moon'></i>
@@ -112,16 +95,13 @@
         </div>
     </nav>
 
-    <!-- Home Section -->
     <section class="home">
-        <!-- Video Container -->
         <div class="video-container">
             <video id="backgroundVideo" autoplay loop muted>
                 <source src="XRP.mp4" type="video/mp4">
             </video>
         </div>
 
-        <!-- Your Custom Widget -->
         <div class="widget">
             <div class="tradingview-widget-container" style="height:100%;width:100%">
                 <div id="tradingview_c75b7" style="height:calc(100% - 32px);width:100%"></div>
@@ -177,7 +157,6 @@
             </div>
         </div>
     </section>
-    <!-- Script -->
     <script src="marketanalytics.js"></script>
 
 </body>
