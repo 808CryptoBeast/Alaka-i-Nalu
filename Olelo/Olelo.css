@@ -5,7 +5,7 @@ body {
   justify-content: center;
   height: 100vh;
   margin: 0;
-  background-image: url("smokey_flag.jpg");
+  background-image: url("assets/smokey_flag.jpg");
   background-size: cover;
   background-position: center;
 }
