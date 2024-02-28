@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (password === storedPassword) {
                 alert('Login successful!');
                 // Redirect to dashboard.html
-                window.location.href = 'dashboard/dashboard.html';
+                window.location.href = 'dashboard.html';
             } else {
                 alert('Invalid credentials. Please try again.');
             }
