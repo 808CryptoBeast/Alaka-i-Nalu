@@ -115,9 +115,17 @@ header {
 
 .logo {
     font-size: 2em;
-    color: #fff;
     user-select: none;
 }
+
+.gis--satellite-earth {
+    display: inline-block; /* Ensure it's a block element */
+    width: 50px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    background-image: url('path/to/your/image.png'); /* Specify the path to your image */
+    background-size: cover; /* Adjust as needed */
+}
+
 
 .navigation a {
     position: relative;
