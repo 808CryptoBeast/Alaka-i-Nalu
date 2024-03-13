@@ -1,6 +1,8 @@
 
 Alaka'i Nalu Web Application
 
+Video Demo: https://youtu.be/Xxg3Db8YUDY
+
 Overview
 Alaka'i Nalu is a comprehensive web-based application designed to provide users with a multifaceted learning experience. Developed using HTML, CSS, and JavaScript, this application offers various features, including market analytics, cultural education, profile creation, event logging, and exploration of cutting-edge technologies like blockchain, cryptography, machine learning (ML), and artificial intelligence (AI).
 
