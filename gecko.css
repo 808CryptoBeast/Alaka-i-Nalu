@@ -1,0 +1,182 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('images/tribal\ star.jpg');
+  background-size: cover; /* Adjust the image size to cover the entire body */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+.topnav {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.topnav h1 {
+  font-size: 50px;
+  margin-left: 420px;
+  text-shadow: 4px 4px 10px rgba(144, 160, 55, .9);
+}
+
+.topnav img {
+  position: absolute;
+  top: 50%;
+  width: 60px;
+  height: 60px;
+  margin: 0 5px;
+  z-index: 1;
+}
+
+.topnav img.left {
+  left: 5px;
+}
+
+.topnav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.topnav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.topnav ul li:first-child {
+  margin-left: 0;
+}
+
+.topnav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.sidenav {
+  height: 100vh;
+  width: 50px;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: width 0.3s;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.network-icon {
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.network-list {
+  display: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 200px;
+  background-color: #222;
+}
+
+.network-item {
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.network-item:hover {
+  background-color: #444; /* Adjust hover background color as needed */
+}
+
+.sidenav:hover {
+  width: 200px;
+}
+
+.sidenav:hover .network-list {
+  display: block;
+}
+
+.search-form {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.search-form input[type="text"] {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.search-form button {
+  padding: 5px 10px;
+}
+
+.search-results {
+  margin: 20px auto; /* Center the search results horizontally */
+  max-width: 600px; /* Set maximum width for the search results */
+  border: 2px solid #0c0c0c; /* Add a border around the search results */
+  padding: 20px; /* Add some padding inside the border */
+  border-radius: 10px; /* Add rounded corners to the border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  background-color: #1b640563; /* Set background color */
+}
+
+/* Style for each search result item */
+.pool {
+  margin-bottom: 10px; /* Add some space between each search result */
+  padding: 10px; /* Add padding inside each search result */
+  border: 1px solid #ddd; /* Add a border around each search result */
+  border-radius: 5px; /* Add rounded corners to each search result */
+  background-color: #2b84949c; /* Set background color for each search result */
+}
+
+.topPoolsList {
+  margin: 20px auto; /* Center the top pools list horizontally */
+  max-width: 600px; /* Set maximum width for the top pools list */
+  border: 2px solid #0c0c0c; /* Add a border around the top pools list */
+  padding: 20px; /* Add some padding inside the border */
+  border-radius: 10px; /* Add rounded corners to the border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  background-color: #1b64056b; /* Set background color */
+}
+
+/* Style for each top pool item */
+.pool {
+  margin-bottom: 10px; /* Add some space between each top pool */
+  padding: 10px; /* Add padding inside each top pool */
+  border: 1px solid #ddd; /* Add a border around each top pool */
+  border-radius: 5px; /* Add rounded corners to each top pool */
+  background-color: #2b849498; /* Set background color for each top pool */
+}
+
+.tokenInfoContainer {
+  margin: 20px auto; /* Center the token info container horizontally */
+  max-width: 600px; /* Set maximum width for the token info container */
+  border: 2px solid #0c0c0c; /* Add a border around the token info container */
+  padding: 20px; /* Add some padding inside the border */
+  border-radius: 10px; /* Add rounded corners to the border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  background-color: #1b640581; /* Set background color */
+}
+
+/* Style for token information */
+.tokenInfo {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+
+/* Add more styles as needed */
+
+
+/* Add more styles as needed */
