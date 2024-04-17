@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoku Alaka'i</title>
+    <link rel="stylesheet" href="gecko.css">
+</head>
+<body>
+    <nav class="topnav">
+        <div>
+            <h1>Hoku Alaka'i</h1>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#" onclick="toggleSearchForm()">Search</a></li>
+        </ul>
+    </nav>
+
+    <div class="sidenav">
+        <div class="network-icon" onmouseover="expandNav()" onmouseout="retractNav()">ETH</div>
+        <div class="network-list">
+            <!-- Supported networks list will be displayed here -->
+        </div>
+    </div>
+    
+    <div id="topPoolsList" class="topPoolsList">
+        <!-- Top pools for token will be displayed here -->
+    </div>
+  
+    <div id="tokenInfoContainer" class="tokenInfoContainer">
+        <!-- Token information will be displayed here -->
+    </div>
+    
+    <div id="searchForm" class="search-form">
+        <input type="text" id="searchInput" placeholder="Enter search query">
+        <button onclick="searchPools()">Search</button>
+    </div>
+
+    <div id="searchResults" class="search-results">
+        <!-- Search results will be displayed here -->
+    </div>
+
+    <script src="gecko.js"></script>
+</body>
+</html>
